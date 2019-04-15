@@ -1,0 +1,15 @@
+n=int(input())
+pair = dict()
+
+for i in range(0,n):
+    word = input().split()
+    key = word[0]
+    value = word[1]
+    pair[key]=value
+
+for i in range(0,n):
+    word1 = input()
+    if word1 in pair :
+        print(word1+"="+pair[word1])
+    else :
+        print("Not found")
