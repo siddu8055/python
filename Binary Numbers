@@ -1,0 +1,20 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    n = int(input())
+    #convert input to the binary
+    binary=bin(n)[2:]
+    #convert the data into list and strip(0)
+    binary = binary.split("0")
+    #max is used to find longest string in a list
+    count = max(binary)
+    #print the max length of a consecutive number of 1's
+    print(len(count))
