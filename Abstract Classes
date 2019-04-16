@@ -1,5 +1,5 @@
 #!/bin/python3
-#we cannot instantiate abstract class and the class which implements abstract class need to implement abstract methods as well.
+#we cannot instantiate abstract class and the class which implements abstract class and need to implement abstract methods as well.
 from abc import ABCMeta, abstractmethod
 class Book(object, metaclass=ABCMeta):
     def __init__(self,title,author):
